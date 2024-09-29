@@ -1,0 +1,35 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html class="h-full bg-stone-950">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Terminal Forge: Your future go-to resource CLI and TUI application development. Free, open-source knowledge and tools to create great CLI and TUI programs." />
+    <meta name="keywords" content="CLI development, TUI applications, terminal apps, open-source resources, developer tools" />
+    <meta property="og:title" content="Terminal Forge: CLI & TUI Development Resources | Coming Soon">
+    <meta property="og:description" content="Empowering developers with free, open-source knowledge and tools for creating great CLI and TUI applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://termforge.sh">
+    <meta property="og:image" content="https://termforge.sh/social-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terminal Forge: CLI & TUI Development Resources | Coming Soon">
+    <meta name="twitter:description" content="Free, open-source knowledge and tools for creating great CLI and TUI applications.">
+    <meta name="twitter:image" content="https://terminalforge.org/social-twitter.jpg">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="h-full bg-stone-950">
+		<slot />
+	</body>
+</html>
